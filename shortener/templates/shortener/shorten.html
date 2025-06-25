@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>URL Shortener</h1>
+<form method="post">
+    {% csrf_token %}
+    <input type="url" name="original_url" placeholder="Enter long URL" required>
+    <input type="text" name="custom_code" placeholder="Custom short code (optional)">
+    <button type="submit">Shorten URL</button>
+</form>
+{% endblock %}
