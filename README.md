@@ -15,14 +15,9 @@ pip install django requests
 pip install -r requirements.txt
 
 # Run
-cd weather_dashboard
 py manage.py runserver
 
 - Tailwind should be properly configured in `settings.py` using [django-tailwind](https://django-tailwind.readthedocs.io/en/latest/).
 
 
-## Environment Variables
 
-This project uses an [OpenWeatherMap](https://openweathermap.org/) API key. To run the project, create a `.env` file in the root directory and add the following:
-
-OPENWEATHERMAP_API_KEY=your_actual_api_key_here
